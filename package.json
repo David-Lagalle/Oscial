@@ -1,5 +1,5 @@
 {
-  "main": "./src/App.js",
+  "main": "./App.js",
   "scripts": {
     "local": "react-scripts start",
     "start": "expo start",
