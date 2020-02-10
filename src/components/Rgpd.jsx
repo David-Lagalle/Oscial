@@ -1,10 +1,15 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 export default class Rgpd extends React.Component {
   render() {
     return (
       <View>
+
+        <Button
+        title="Post Index"
+        onPress={() => navigation.navigate('indexPost')} class="btn btn-primary" />
+
         <Text>
           <h2>Définitions</h2>
           <p>
