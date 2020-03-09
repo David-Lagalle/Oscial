@@ -2,9 +2,8 @@ import React from "react";
 import { registerRootComponent } from "expo";
 import { StyleSheet } from "react-native";
 import Rgpd from "./components/Rgpd";
-import IndexPost from "./components/post/indexPost";
-import EditPost from "./components/post/editPost";
 import { Router, Scene } from 'react-native-router-flux'
+import FormPost from "./components/FormPost";
 
  /* const Route = () => (
   <Router>
@@ -28,7 +27,7 @@ import { Router, Scene } from 'react-native-router-flux'
 
 class App extends React.Component {
   render() {
-    return <IndexPost />;
+    return <FormPost />;
   }
 }
 
