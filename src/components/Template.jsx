@@ -35,7 +35,8 @@ export default class Template extends React.Component {
                 color="black"
                 style={{ width: 40 }}
                 path={mdiAccountCircle}
-                onClick={() => Actions.Profile()}
+                onClick={() => Actions.Profile()
+                }
               />
             </div>
           </div>
@@ -50,7 +51,9 @@ export default class Template extends React.Component {
           >
             <Icon color="black" style={{ width: 40 }} path={mdiHome} />
             <Icon color="black" style={{ width: 40 }} path={mdiCalendar} />
-            <Icon color="black" style={{ width: 40 }} path={mdiCar} />
+            <Icon color="black" style={{ width: 40 }} 
+             path={mdiCar}
+             onClick={() => Actions.Covoiturage()}/>
             <Icon color="black" style={{ width: 40 }} path={mdiBell} />
             <Icon color="black" style={{ width: 40 }} path={mdiForum} />
           </div>
