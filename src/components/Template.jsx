@@ -49,7 +49,7 @@ export default class Template extends React.Component {
             }}
           >
             <Icon color="black" style={{ width: 40 }} path={mdiHome} />
-            <Icon color="black" style={{ width: 40 }} path={mdiCalendar} />
+            <Icon color="black" style={{ width: 40 }} path={mdiCalendar} onClick={() => Actions.Event()} />
             <Icon color="black" style={{ width: 40 }} path={mdiCar} />
             <Icon color="black" style={{ width: 40 }} path={mdiBell} />
             <Icon color="black" style={{ width: 40 }} path={mdiForum} />

@@ -8,6 +8,7 @@ export default class Navigation extends React.Component {
       <View>
         <Text>
           <button onClick={() => Actions.Profile()}>Profile</button>
+          <button onClick={() => Actions.Event()}>Event</button>
           <button onClick={() => Actions.Rgpd()}>Rgpd</button>
         </Text>
       </View>
