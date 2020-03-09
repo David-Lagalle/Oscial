@@ -2,8 +2,8 @@ import React from "react";
 import { registerRootComponent } from "expo";
 import { StyleSheet } from "react-native";
 import Rgpd from "./components/Rgpd";
-import IndexPost from "./components/indexPost";
-import EditPost from "./components/editPost";
+import IndexPost from "./components/post/indexPost";
+import EditPost from "./components/post/editPost";
 import { Router, Scene } from 'react-native-router-flux'
 
  /* const Route = () => (
