@@ -6,8 +6,8 @@ class PswSection extends React.Component {
   render() {
     return (
       <View>
-        <div class="form-row">
-          <div class="col">
+        <div className="form-row">
+          <div className="col">
             <label name="oldPsw" htmlFor="oldPsw">
               Ancien mot de passe
             </label>
@@ -19,7 +19,7 @@ class PswSection extends React.Component {
               placeholder=""
             ></input>
           </div>
-          <div class="col">
+          <div className="col">
             <label htmlFor="newPsw">Nouveau mot de passe</label>
             <input
               id="newPsw"
@@ -53,8 +53,8 @@ export default class Rgpd extends React.Component {
           <div className="content">
             <form>
               <img></img>
-              <div class="form-row">
-                <div class="col">
+              <div className="form-row">
+                <div className="col">
                   <label htmlFor="name">Nom</label>
                   <input
                     className="form-control"
@@ -63,7 +63,7 @@ export default class Rgpd extends React.Component {
                     placeholder=""
                   ></input>
                 </div>
-                <div class="col">
+                <div className="col">
                   <label htmlFor="name">Prénom</label>
                   <input
                     className="form-control"
@@ -79,8 +79,8 @@ export default class Rgpd extends React.Component {
                 className="btn btn-secondary"
                 onClick={() => this.hidePsw()}
               ></input>
-              <div class="form-row">
-                <div class="col">
+              <div className="form-row">
+                <div className="col">
                   <label htmlFor="mail">Mail</label>
                   <input
                     className="form-control"
@@ -89,7 +89,7 @@ export default class Rgpd extends React.Component {
                     placeholder=""
                   ></input>
                 </div>
-                <div class="col">
+                <div className="col">
                   <label htmlFor="birthday">Date de naissance</label>
                   <input
                     className="form-control"
@@ -99,8 +99,8 @@ export default class Rgpd extends React.Component {
                   ></input>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="col">
+              <div className="form-row">
+                <div className="col">
                   <label htmlFor="name">Adresse postale</label>
                   <input
                     className="form-control"
@@ -109,7 +109,7 @@ export default class Rgpd extends React.Component {
                     placeholder=""
                   ></input>
                 </div>
-                <div class="col">
+                <div className="col">
                   <label htmlFor="name">Numéro de téléphone</label>
                   <input
                     className="form-control"
@@ -121,16 +121,16 @@ export default class Rgpd extends React.Component {
               </div>
               <label>Sexe</label>
               <div className="input-group-text">
-                <div class="form-row">
-                  <div class="col">
+                <div className="form-row">
+                  <div className="col">
                     <input id="man" name="sexe" type="radio"></input>
                     <label id="man">Homme</label>
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <input id="woman" name="sexe" type="radio"></input>
                     <label id="man">Femme</label>
                   </div>
-                  <div class="col">
+                  <div className="col">
                     <input id="other" name="sexe" type="radio"></input>
                     <label id="man">Autre</label>
                   </div>
