@@ -6,9 +6,13 @@ export default class Rgpd extends React.Component {
     return (
       <View>
 
-        <Button
+        {/* <Button
         title="Post Index"
-        onPress={() => navigation.navigate('indexPost')} class="btn btn-primary" />
+        onPress={() => this.props.navigation.navigate.IndexPost} class="btn btn-primary" /> */}
+        {/* <Button
+        title="Post Index"
+        onPress={Actions.IndexPost()} class="btn btn-primary" />  */}
+
 
         <Text>
           <h2>Définitions</h2>
