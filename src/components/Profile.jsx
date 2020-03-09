@@ -143,6 +143,7 @@ export default class Rgpd extends React.Component {
                 <option value="">Etudiant</option>
                 <option value="">Salarié</option>
               </select>
+
               <br></br>
               <button type="submit" className="btn btn-success">
                 Sauvegarder
