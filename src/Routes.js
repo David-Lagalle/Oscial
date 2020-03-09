@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import Event from "./components/Event"
 import Rgpd from "./components/Rgpd";
 import Covoiturage from "./components/Covoiturage";
+import NewsFeed from "./components/NewsFeed";
 
 const Routes = () => (
   <Router>
@@ -13,6 +14,7 @@ const Routes = () => (
       <Scene key="Event" component={Event} title="Event" hideNavBar />
       <Scene key="Rgpd" component={Rgpd} title="Rgpd" hideNavBar />
       <Scene key="Covoiturage" component={Covoiturage} title="Covoiturage" hideNaveBar/>
+      <Scene key="NewsFeed" component={NewsFeed} title="NewsFeed" hideNavBar />
     </Scene>
   </Router>
 );

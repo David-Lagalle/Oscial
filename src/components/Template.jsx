@@ -49,8 +49,7 @@ export default class Template extends React.Component {
               borderBottom: "2px solid #000000"
             }}
           >
-            <Icon color="black" style={{ width: 40 }} path={mdiHome} />
-            <Icon color="black" style={{ width: 40 }} path={mdiCalendar} />
+            <Icon color="black" style={{ width: 40 }} path={mdiHome} onClick={() => Actions.NewsFeed()} />
             <Icon color="black" style={{ width: 40 }} 
              path={mdiCar}
              onClick={() => Actions.Covoiturage()}/>
