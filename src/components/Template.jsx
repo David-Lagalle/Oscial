@@ -54,8 +54,8 @@ export default class Template extends React.Component {
              path={mdiCar}
              onClick={() => Actions.Covoiturage()}/>
             <Icon color="black" style={{ width: 40 }} path={mdiCalendar} onClick={() => Actions.Event()} />
-            <Icon color="black" style={{ width: 40 }} path={mdiBell} />
-            <Icon color="black" style={{ width: 40 }} path={mdiForum} />
+            <Icon color="black" style={{ width: 40 }} path={mdiBell} onClick={() => Actions.Notification()} />
+            <Icon color="black" style={{ width: 40 }} path={mdiForum} onClick={() => Actions.Messaging()} />
           </div>
         </Text>
       </View>
