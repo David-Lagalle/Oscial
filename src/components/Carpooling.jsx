@@ -1,5 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
+import Icon from "@mdi/react";
+import { mdiMapMarker } from "@mdi/js";
+import "./Carpooling.css";
 
 export default class Carpooling extends React.Component {
   render() {
@@ -17,34 +20,35 @@ export default class Carpooling extends React.Component {
               padding: "30px"
             }}
           >
-            <div className="form-group ">
-              <label htmlFor="formGroupExampleInput">Lieu de départ</label>
-              <input
-                type="text"
-                className="form-control"
-                id="formGroupExampleInput"
-              />
-            </div>
-            <p>Date et heure de départ</p>
-            <div className="form-group row">
-              <input
-                type="text"
-                className="form-control col"
-                id="formGroupExampleInput2"
-                placeholder="jj/mm/aa"
-              />
+            <div className="form-row">
               <div className="col">
-                <img
-                  src="../image/iconlocalisation.png"
-                  alt="icone localisation"
+                <label htmlFor="departurePlace">Lieu de départ</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="departurePlace"
                 />
               </div>
-              <input
-                type="text"
-                className="form-control col"
-                id="formGroupExampleInput3"
-                placeholder="hh:mm"
-              />
+              <Icon color="black" style={{ width: 40 }} path={mdiMapMarker} />
+            </div>
+            <p>Date et heure de départ</p>
+            <div className="form-row">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="dateTimeDeparture"
+                  placeholder="jj/mm/aa"
+                />
+              </div>
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="formGroupExampleInput3"
+                  placeholder="hh:mm"
+                />
+              </div>
               <div className="col"></div>
             </div>
             <p>Lieu d'arrivée</p>
@@ -56,24 +60,27 @@ export default class Carpooling extends React.Component {
               />
             </div>
             <p>Date et heure d'arrivée</p>
-            <div className="form-group row">
-              <input
-                type="text"
-                className="form-control col"
-                id="formGroupExampleInput5"
-                placeholder="jj/mm/aa"
-              />
-              <div className="col"></div>
-              <input
-                type="text"
-                className="form-control col"
-                id="formGroupExampleInput6"
-                placeholder="hh:mm"
-              />
+            <div className="form-row">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="formGroupExampleInput5"
+                  placeholder="jj/mm/aa"
+                />
+              </div>
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="formGroupExampleInput6"
+                  placeholder="hh:mm"
+                />
+              </div>
               <div className="col"></div>
             </div>
             <button type="submit" className="btn btn-success">
-              Sign in
+              Rechercher
             </button>
           </form>
         </Text>
