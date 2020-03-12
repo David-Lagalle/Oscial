@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import Icon from "@mdi/react";
 import {
   mdiHome,
@@ -8,8 +8,7 @@ import {
   mdiCalendar,
   mdiCar,
   mdiBell,
-  mdiForum,
-  mdiArmFlex
+  mdiForum
 } from "@mdi/js";
 import { Actions } from "react-native-router-flux";
 
@@ -35,8 +34,7 @@ export default class Template extends React.Component {
                 color="black"
                 style={{ width: 40 }}
                 path={mdiAccountCircle}
-                onClick={() => Actions.Profile()
-                }
+                onClick={() => Actions.Profile()}
               />
             </div>
           </div>
@@ -49,13 +47,36 @@ export default class Template extends React.Component {
               borderBottom: "2px solid #000000"
             }}
           >
-            <Icon color="black" style={{ width: 40 }} path={mdiHome} onClick={() => Actions.NewsFeed()} />
-            <Icon color="black" style={{ width: 40 }} 
-             path={mdiCar}
-             onClick={() => Actions.Covoiturage()}/>
-            <Icon color="black" style={{ width: 40 }} path={mdiCalendar} onClick={() => Actions.Event()} />
-            <Icon color="black" style={{ width: 40 }} path={mdiBell} onClick={() => Actions.Notification()} />
-            <Icon color="black" style={{ width: 40 }} path={mdiForum} onClick={() => Actions.Messaging()} />
+            <Icon
+              color="black"
+              style={{ width: 40 }}
+              path={mdiHome}
+              onClick={() => Actions.NewsFeed()}
+            />
+            <Icon
+              color="black"
+              style={{ width: 40 }}
+              path={mdiCar}
+              onClick={() => Actions.Covoiturage()}
+            />
+            <Icon
+              color="black"
+              style={{ width: 40 }}
+              path={mdiCalendar}
+              onClick={() => Actions.Event()}
+            />
+            <Icon
+              color="black"
+              style={{ width: 40 }}
+              path={mdiBell}
+              onClick={() => Actions.Notification()}
+            />
+            <Icon
+              color="black"
+              style={{ width: 40 }}
+              path={mdiForum}
+              onClick={() => Actions.Messaging()}
+            />
           </div>
         </Text>
       </View>
