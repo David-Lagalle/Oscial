@@ -16,9 +16,9 @@ const Routes = () => (
       <Scene key="Event" component={Event} title="Event" hideNavBar />
       <Scene key="Rgpd" component={Rgpd} title="Rgpd" hideNavBar />
       <Scene
-        key="Covoiturage"
+        key="Carpooling"
         component={Carpooling}
-        title="Covoiturage"
+        title="Carpooling"
         hideNavBar
       />
       <Scene key="NewsFeed" component={NewsFeed} title="NewsFeed" hideNavBar />

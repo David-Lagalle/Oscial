@@ -11,8 +11,29 @@ import {
   mdiForum
 } from "@mdi/js";
 import { Actions } from "react-native-router-flux";
+import { PageEnum } from "../PageEnum";
+
+let defaultColor = "black";
+let selectedColor = "#eef46d";
 
 export default class Template extends React.Component {
+  state = {
+    Profile: defaultColor,
+    NewsFeed: defaultColor,
+    Carpooling: defaultColor,
+    Event: defaultColor,
+    Notification: defaultColor,
+    Messaging: defaultColor,
+    oldComponent: null
+  };
+
+  toggleSelected = component => {
+    if (this.state.oldComponent !== null) {
+      this.setState({ [this.state.oldComponent]: defaultColor });
+    }
+    this.setState({ [component]: selectedColor, oldComponent: component });
+  };
+
   render() {
     return (
       <View>
@@ -31,10 +52,15 @@ export default class Template extends React.Component {
             <div>
               <Icon color="black" style={{ width: 40 }} path={mdiMagnify} />
               <Icon
-                color="black"
+                color={this.state.Profile}
+                id="AccountIcon"
+                backgroundcolor="white"
                 style={{ width: 40 }}
                 path={mdiAccountCircle}
-                onClick={() => Actions.Profile()}
+                onClick={() => {
+                  Actions.Profile();
+                  this.toggleSelected(PageEnum.Profile);
+                }}
               />
             </div>
           </div>
@@ -48,34 +74,49 @@ export default class Template extends React.Component {
             }}
           >
             <Icon
-              color="black"
+              color={this.state.NewsFeed}
               style={{ width: 40 }}
               path={mdiHome}
-              onClick={() => Actions.NewsFeed()}
+              onClick={() => {
+                Actions.NewsFeed();
+                this.toggleSelected(PageEnum.NewsFeed);
+              }}
             />
             <Icon
-              color="black"
+              color={this.state.Carpooling}
               style={{ width: 40 }}
               path={mdiCar}
-              onClick={() => Actions.Covoiturage()}
+              onClick={() => {
+                Actions.Carpooling();
+                this.toggleSelected(PageEnum.Carpooling);
+              }}
             />
             <Icon
-              color="black"
+              color={this.state.Event}
               style={{ width: 40 }}
               path={mdiCalendar}
-              onClick={() => Actions.Event()}
+              onClick={() => {
+                Actions.Event();
+                this.toggleSelected(PageEnum.Event);
+              }}
             />
             <Icon
-              color="black"
+              color={this.state.Notification}
               style={{ width: 40 }}
               path={mdiBell}
-              onClick={() => Actions.Notification()}
+              onClick={() => {
+                Actions.Notification();
+                this.toggleSelected(PageEnum.Notification);
+              }}
             />
             <Icon
-              color="black"
+              color={this.state.Messaging}
               style={{ width: 40 }}
               path={mdiForum}
-              onClick={() => Actions.Messaging()}
+              onClick={() => {
+                Actions.Messaging();
+                this.toggleSelected(PageEnum.Messaging);
+              }}
             />
           </div>
         </Text>
