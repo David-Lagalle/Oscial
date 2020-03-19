@@ -1,8 +1,13 @@
 import React from "react";
 import { Text, View } from "react-native";
 import Icon from "@mdi/react";
-import { mdiMapMarker } from "@mdi/js";
+import { mdiMapMarker,
+        mdiCalendarMultiselect,
+        mdiClockOutline,      
+} from "@mdi/js";
+
 import "./Carpooling.css";
+import { AuthSession } from "expo";
 
 export default class Carpooling extends React.Component {
   render() {
@@ -12,13 +17,6 @@ export default class Carpooling extends React.Component {
           <h1>Covoiturage</h1>
           <form
             className=" border border-secondary"
-            style={{
-              marginRight: "auto",
-              marginLeft: "auto",
-              width: "80%",
-              marginTop: "10%",
-              padding: "30px"
-            }}
           >
             <div className="form-row">
               <div className="col">
@@ -31,9 +29,9 @@ export default class Carpooling extends React.Component {
               </div>
               <Icon color="black" style={{ width: 40 }} path={mdiMapMarker} />
             </div>
-            <p>Date et heure de départ</p>
+            <label htmlFor="dateTimeDeparture">Date et heure de départ</label>
             <div className="form-row">
-              <div className="col">
+              <div className="col-10">
                 <input
                   type="text"
                   className="form-control"
@@ -41,7 +39,9 @@ export default class Carpooling extends React.Component {
                   placeholder="jj/mm/aa"
                 />
               </div>
-              <div className="col">
+              <Icon color="black" style={{ width: 40 }} path={mdiCalendarMultiselect}/>
+           
+              <div className="col-10 ">
                 <input
                   type="text"
                   className="form-control"
@@ -49,19 +49,24 @@ export default class Carpooling extends React.Component {
                   placeholder="hh:mm"
                 />
               </div>
-              <div className="col"></div>
+              <Icon color="black" style={{ width: 40 }} path={mdiClockOutline} />
+              
             </div>
-            <p>Lieu d'arrivée</p>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                id="formGroupExampleInput4"
-              />
-            </div>
-            <p>Date et heure d'arrivée</p>
             <div className="form-row">
               <div className="col">
+                <label htmlFor="departurePlace">Lieu d'arrivée</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="arrivalurePlace"
+                />
+              </div>
+              <Icon color="black" style={{ width: 40 }} path={mdiMapMarker} />
+            </div>
+            
+            <label htmlFor="formGroupExampleInput5">Date et heure d'arrivée</label>
+            <div className="form-row">
+              <div className="col-10">
                 <input
                   type="text"
                   className="form-control"
@@ -69,7 +74,9 @@ export default class Carpooling extends React.Component {
                   placeholder="jj/mm/aa"
                 />
               </div>
-              <div className="col">
+              <Icon color="black" style={{ width: 40 }} path={mdiCalendarMultiselect}/>
+              
+              <div className="col-10">
                 <input
                   type="text"
                   className="form-control"
@@ -77,11 +84,14 @@ export default class Carpooling extends React.Component {
                   placeholder="hh:mm"
                 />
               </div>
-              <div className="col"></div>
+              <Icon  id=' heure' color="black" style={{ width: 40 }} path={mdiClockOutline} />
+              
             </div>
-            <button type="submit" className="btn btn-success">
+          
+            <button type="submit"  className="btn btn-success "id='center'>
               Rechercher
             </button>
+         
           </form>
         </Text>
       </View>
