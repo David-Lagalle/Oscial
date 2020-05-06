@@ -13,6 +13,7 @@
 }
 
 .content button[type="submit"] {
+  margin-top: 20px; 
   display: block;
   margin-left: auto;
   margin-right: auto;

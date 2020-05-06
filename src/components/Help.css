@@ -1,0 +1,32 @@
+.content{
+    width: 90%;
+    background-color: #ebfeed;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+.btn {
+   height: 2em;
+}
+#titre{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#centre3{
+    display: block;
+    margin-right: auto ; 
+    margin-left: auto ;
+}
+#centre2{
+    display: block;
+    margin-right: auto ; 
+    margin-left: auto ;
+}
+#centre1{
+    display: block;
+    margin-right: auto ; 
+    margin-left: auto ;
+}
+
+
